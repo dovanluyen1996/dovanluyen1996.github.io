@@ -1,0 +1,21 @@
+.back-top {
+	width: 50px;
+	height: 50px;
+	background: #01FF70;
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+	position: fixed;
+	z-index: 999;
+	bottom: 40px;
+	right: 20px;
+	cursor: pointer;
+	box-shadow: 0 0 0 2px #fcf9f4;
+	
+}
+.back-top:active {
+	transform:translate(0,4px);
+    box-shadow:0 4px gray; 
+}
