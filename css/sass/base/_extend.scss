@@ -1,0 +1,35 @@
+// word break
+%break {
+  word-break: break-all;
+}
+
+%nowrap {
+  white-space: nowrap;
+}
+
+%no_elps {
+  white-space: normal;
+  text-overflow: clip;
+  -webkit-line-clamp: initial;
+}
+// single line ellipsis
+%elps {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+%clearfix {
+  &::after {
+    clear: both;
+    content: ".";
+    display: block;
+    visibility: hidden;
+    height: 0;
+  }
+}
+%hover_animation {
+  transition-property: background-color, color;
+  transition-duration: 200ms;
+}
+
+

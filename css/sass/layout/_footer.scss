@@ -1,0 +1,52 @@
+.footer {
+  .contact {
+    @extend %clearfix;
+    overflow: hidden;
+    position: relative;
+    color: $color-a;
+    .section-content {
+      position: absolute;
+      top: -280px;
+      @include rotate(50deg);
+      background: map-get($global-color, g);
+      width: 682px;
+      height: 700px;
+      .item-content {
+        @include rotate(-50deg);
+        text-align: center;
+        position: relative;
+        left: -42px;
+        top: 400px;
+        h1 {
+          text-transform: uppercase;
+          font-size: 30px;
+        }
+        img {
+          padding-top: 10px;
+        }
+        .contact-info {
+          font-family: Roboto;
+          position: relative;
+          left: 284px;
+          top: 40px;
+          line-height: 30px;
+          text-align: left;
+          h2 {
+            font-size: 20px;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    @extend %clearfix;
+    display: flex;
+    font-family: Roboto;
+    align-items: center;
+    background: map-get($global-color, g);
+    color: $color-a;
+    width: 100%;
+    height: 58px;
+  }
+}

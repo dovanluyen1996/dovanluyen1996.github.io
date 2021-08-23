@@ -1,0 +1,35 @@
+#header {
+  @extend %clearfix;
+  background: url("../images/bg-top.jpg")center no-repeat;
+  min-height: 60px;
+  width: 100%;
+  background: $color-primary;
+  position: fixed;
+  z-index: 9999;
+  .logo {
+    img {
+      padding-top: 16px;
+    }
+  }
+  .nav {
+    @extend %clearfix;
+    position: relative;
+    float: right;
+    line-height: 60px;
+    text-transform: uppercase;
+    li {
+      float: left;
+      border-top: 3px solid transparent;
+      border-bottom: 3px solid transparent;
+      a {
+        display: block;
+        font-size: 16px;
+        padding: 0 10px;
+        color: $color-a;
+      }
+      &:hover {
+        border-bottom: 3px solid $color-a;
+      }
+    }
+  }
+}
