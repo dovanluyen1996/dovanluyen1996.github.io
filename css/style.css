@@ -331,7 +331,7 @@ h3, h4 {
 }
 
 /* -------------- PC ------------------- */
-@media screen and (min-width: 641px) {
+@media (min-width: 641px) {
   #header .header-top .logoSP {
     display: none;
   }
@@ -349,7 +349,7 @@ h3, h4 {
   }
 }
 /* -------------- SP ------------------- */
-@media screen and (max-width: 640px) {
+@media (max-width: 640px) {
   #header .header-top .header-logo {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
