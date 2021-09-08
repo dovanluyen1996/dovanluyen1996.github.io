@@ -1,0 +1,105 @@
+#footer {
+  .main-contact {
+    background-color: #4c5057;
+    padding-bottom: 30px;
+    border-bottom: 2px dotted grey;
+    .text-center {
+      width: 100%;
+      text-align: center;
+      color: $color-white;
+      margin-bottom: 30px;
+      h2 {
+        padding-top: 25px;
+        font-size: 90px;
+        text-shadow: 1px 2px $color-black, 3px 4px $color-white;
+      }
+      .blog_line {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .line {
+          width: 70px;
+          height: 2px;
+          background-color: $color-white;
+        }
+        .text {
+          padding-left: 15px;
+          padding-right: 15px;
+        }
+      }
+      h3 {
+        font-size: 1rem;
+        padding-top: 10px;
+      }
+    }
+    .form-contact {
+      display: flex;
+      flex-direction: column;
+      row-gap: 10px;
+      align-items: center;
+      input[type="text"],
+      select,
+      textarea {
+        width: 70%;
+        padding: 10px;
+        border-radius: 4px;
+        outline: none;
+        border: none;
+        color: $color-black;
+        font-weight: 400;
+        resize: none;
+      }
+      .btn {
+        width: 70%;
+        button {
+          padding: 10px;
+          border-radius: 4px;
+          border: none;
+          color: $color-black;
+          background-color: $color-white;
+          font-weight: 700;
+          transition: 0.2s;
+        }
+        button:hover {
+          background-color: aqua;
+          color: #fff;
+        }
+      }
+    }
+  }
+  .footer-text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    h5 {
+      font-weight: 700;
+      font-size: 24px;
+      color: $color-white;
+    }
+    h5:after {
+      display: block;
+      content: "";
+      margin-top: 8px;
+      width: 100%;
+      height: 2px;
+      background-color: $color-white;
+    }
+  }
+  .footer-logo {
+    ul {
+      display: flex;
+      justify-content: center;
+      li {
+        margin-right: 15px;
+        transition: 0.3s;
+      }
+      li:hover {
+        transform: translateY(-10px);
+      }
+      img {
+        width: 80px;
+      }
+    }
+  }
+}

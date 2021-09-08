@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>BLOG RETRO</title>
+    <script
+      src="https://kit.fontawesome.com/a530e140e3.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Font Icon -->
+  </head>
+  <body>
+    <!-- ----------HEADER----------- -->
+    <header id="header">
+      <div class="header-menu">
+        <div class="toogle">
+          <i class="fas fa-bars" id="header-toggle"></i>
+        </div>
+        <div class="container">
+          <nav class="menu">
+            <ul id="nav-menu">
+              <a href="#main"
+                ><img src="images/icon/logo.png" alt="" class="logo_toogle"
+              /></a>
+              <li><a class="scroll" href="#about">ABOUT ME</a></li>
+              <li><a class="scroll" href="#portfolio">PORTFOLIO</a></li>
+              <li class="show">
+                <a href="#main"
+                  ><img src="images/icon/logo.png" alt="" class="logo"
+                /></a>
+              </li>
+              <li><a class="scroll" href="#myblog">MY BLOG</a></li>
+              <li><a class="scroll" href="#contact">CONTACT ME</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- -----line-per----- -->
+      <div id="myline"></div>
+    </header>
+
+    <!-- ----------HEADER----------- -->
+    <main id="main">
+      <!-- -----------------------RETRO------------------------------- -->
+      <section class="main-retro">
+        <div class="container">
+          <div class="retro-banner">
+            <img src="images/banner.png" alt="" class="banner_retro" />
+            <img src="images/text_03.png" alt="" class="banner_text" />
+          </div>
+
+          <!-- -------------SLIDE----------------------- -->
+          <div class="retro-slide">
+            <div class="mySlides">
+              <div class="numbertext">1 / 3</div>
+              <img src="images/slide/slide-img2.jpg" class="img_animate" />
+              <div class="text">Wonderful Theme Retro</div>
+            </div>
+            <div class="mySlides two">
+              <div class="numbertext">2 / 3</div>
+              <img src="images/slide/slide-img1.jpg" class="img_animate" />
+              <div class="text">Wonderful Theme About</div>
+            </div>
+            <div class="mySlides three">
+              <div class="numbertext">3 / 3</div>
+              <img src="images/slide/slide-img3.jpg" class="img_animate" />
+              <div class="text">Wonderful Theme Portfolio</div>
+            </div>
+            <!-- -----------Next-Prev------------ -->
+            <a class="prev" onclick="Clickshow(-1)">❮</a>
+            <a class="next" onclick="Clickshow(1)">❯</a>
+          </div>
+          <!-- -------------SLIDE----------------------- -->
+
+          <!-- Nút tròn điều khiển slideshow-->
+          <div class="retro-dot">
+            <span class="dot" onclick="Dotshow(1)"></span>
+            <span class="dot" onclick="Dotshow(2)"></span>
+            <span class="dot" onclick="Dotshow(3)"></span>
+          </div>
+
+          <div class="retro-text">
+            <h2>"HELLO, I AM JOHN DOE</h2>
+            <h2>WELCOME TO RETRO MY WONDERFUL THEME!"</h2>
+          </div>
+        </div>
+      </section>
+      <!-- -----------------------END-RETRO------------------------------- -->
+
+      <!-- -----------------------ABOUT------------------------------- -->
+      <section class="main-about" id="about">
+        <div class="container">
+          <div class="text-center">
+            <h2>ABOUT ME</h2>
+            <div class="about_line">
+              <p class="line"></p>
+              <p class="text">XXX</p>
+              <p class="line"></p>
+            </div>
+            <h3>I AM A GRAPHIC DESIGNER FROM BALTIMORE</h3>
+          </div>
+          <!-- ------------ABOUT------------- -->
+          <div class="about-grid">
+            <div class="grid-column movie">
+              <a href="javascript:void(0)"
+                ><img src="images/icon/icon1.png" alt="" class="grid-img"
+              /></a>
+              <h2>MOVIES</h2>
+              <p>WHAT I WATCH</p>
+              <p class="line"></p>
+              <p class="text">
+                Clutter is honest! I do believe that has to the users
+                <strong>selfexpression</strong>.Care.Things which is a projector
+                operating system such formats are deep and profound and
+                meaningful. It's the traditions of data. Good design should be
+                different levels. There's no rational alternative. That's come
+                to complexity.
+              </p>
+            </div>
+            <div class="grid-column music">
+              <a href="javascript:void(0)"
+                ><img src="images/icon/icon2.png" alt="" class="grid-img"
+              /></a>
+              <h2>MUSIC</h2>
+              <p>WHAT I LISTEN</p>
+              <p class="line"></p>
+              <p class="text">
+                Good design. The content, you'll love
+                <strong>powerpoint should be different</strong>. It's about
+                design is that part? Good design is making something looks. And
+                aesthetic. And colour defines your interface. That cannot be
+                overtly different. That has to chance. And restrained, low
+                resolution, but you get rid of materials.
+              </p>
+            </div>
+            <div class="grid-column clothes">
+              <a href="javascript:void(0)"
+                ><img src="images/icon/icon3.png" alt="" class="grid-img"
+              /></a>
+              <h2>CLOTHES</h2>
+              <p>WHAT I WEAR</p>
+              <p class="line"></p>
+              <p class="text">
+                Very honest approach and product. The other product that changes
+                function like the absence of function. And frustrating that
+                products that it's the functional imperative, we kept going and
+                frustrating that we are about bringing order to be better and
+                less complicated to understand.
+              </p>
+            </div>
+            <div class="grid-column food">
+              <a href="javascript:void(0)"
+                ><img src="images/icon/icon4.png" alt="" class="grid-img"
+              /></a>
+              <h2>FOOD</h2>
+              <p>WHAT I EAT</p>
+              <p class="line"></p>
+              <p class="text">
+                Simplicity. Its context. From so many different levels. There's
+                real simplicity is. Designing and place of the objects we're
+                surrounded by seem trivial. There's
+                <strong>no rational alternative</strong>. I think that's a very
+                complicated problems without letting people have a very easy to
+                mean so much that acknowledges.
+              </p>
+            </div>
+          </div>
+          <!-- ------------ABOUT------------- -->
+        </div>
+      </section>
+      <!-- -----------------------END-ABOUT------------------------------- -->
+
+      <!-- -----------------------PORTFOLIO------------------------------- -->
+      <section class="main-portfolio" id="portfolio">
+        <div class="container">
+          <div class="text-center">
+            <h2>PORTFOLIO</h2>
+            <div class="about_line">
+              <p class="line"></p>
+              <p class="text">XXX</p>
+              <p class="line"></p>
+            </div>
+            <h3>SIMPLICITY IS THE ULTIMATE SOPHISTICATION</h3>
+          </div>
+          <!-- ------------Tab-portfolio------------- -->
+          <div class="nav-menu">
+            <p class="title">Filter by</p>
+            <ul class="menu-tab">
+              <li class="active">
+                <a href="javascript:void(0)">Design all</a>
+              </li>
+              <li><a href="javascript:void(0)">logo</a></li>
+              <li><a href="javascript:void(0)">football</a></li>
+              <li><a href="javascript:void(0)">poster</a></li>
+              <li><a href="javascript:void(0)">resources</a></li>
+              <li><a href="javascript:void(0)">retro</a></li>
+              <li><a href="javascript:void(0)">t-shirts</a></li>
+              <li><a href="javascript:void(0)">videos</a></li>
+            </ul>
+          </div>
+          <div class="portfolio-grid">
+            <!-- -------Design-All------ -->
+            <div class="tab-grid active">
+              <div class="grid-main">
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-logo/logo1.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-book"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-football/photo1.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-tshirt"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-poster/poster1.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-video"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-resou/res1.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-motorcycle"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-retro/retro1.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-video"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-shirt/shirt1.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-book"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-video/video1.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-paperclip"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/po8.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-book"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- -------Design-All------ -->
+
+            <!-- -------grid-logo------ -->
+            <div class="tab-grid">
+              <div class="grid-main">
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-logo/logo1.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-book"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-logo/logo2.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-tshirt"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-logo/logo3.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-tshirt"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-logo/logo4.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-tshirt"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-logo/logo5.png"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-tshirt"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- -------grid-logo------ -->
+
+            <!-- -------grid-football------ -->
+            <div class="tab-grid">
+              <div class="grid-main">
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-football/photo1.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-book"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-football/photo2.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-tshirt"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-football/photo3.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-tshirt"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-football/photo4.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-tshirt"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-football/photo5.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-tshirt"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-football/photo6.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-tshirt"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- -------grid-football------ -->
+
+            <!-- -------grid-poster------ -->
+            <div class="tab-grid">
+              <div class="grid-main">
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-poster/poster1.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-book"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-poster/poster2.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-tshirt"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-poster/poster4.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-tshirt"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-poster/poster4.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-tshirt"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- -------grid-poster------ -->
+
+            <!-- -------grid-resources------ -->
+            <div class="tab-grid">
+              <div class="grid-main">
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-resou/res1.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-book"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-resou/res2.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-tshirt"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-resou/res3.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-tshirt"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-resou/res4.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-tshirt"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- -------grid-resources------ -->
+
+            <!-- -------grid-retro------ -->
+            <div class="tab-grid">
+              <div class="grid-main">
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-retro/retro1.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-book"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-retro/retro2.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-tshirt"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-retro/retro3.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-tshirt"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- -------grid-retro------ -->
+
+            <!-- -------grid-shirts------ -->
+            <div class="tab-grid">
+              <div class="grid-main">
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-shirt/shirt1.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-book"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-shirt/shirt2.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-tshirt"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-shirt/shirt3.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-tshirt"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- -------grid-shirts------ -->
+
+            <!-- -------grid-video------ -->
+            <div class="tab-grid">
+              <div class="grid-main">
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-video/video1.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-book"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-video/video2.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-tshirt"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-video/video3.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-tshirt"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+                <div class="grid-column">
+                  <a href="javascript:void(0)">
+                    <div class="img">
+                      <img
+                        src="images/portfolio/port-video/video4.jpg"
+                        alt=""
+                        class="image"
+                      />
+                    </div>
+                    <div class="icon"><i class="fas fa-tshirt"></i></div>
+                    <div class="text">Image galleries are funny</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+            <!-- -------grid-video------ -->
+          </div>
+          <!-- ------Portfolio-Link-------- -->
+          <div class="browse">
+            <div class="browse-link portfolio-link">
+              <a href="javascript:void(0)">BROWSE ALL</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- -----------------------PORTFOLIO------------------------------- -->
+
+      <!-- -----------------------MY-BLOG------------------------------- -->
+      <section class="main-blog" id="myblog">
+        <div class="container">
+          <div class="text-center">
+            <h2>MY BLOG</h2>
+            <div class="blog_line">
+              <p class="line"></p>
+              <p class="text">XXX</p>
+              <p class="line"></p>
+            </div>
+            <h3>NEWS FROM MY HOUSE</h3>
+          </div>
+          <!-- ------------Blog-row------------- -->
+          <div class="blog-center">
+            <div class="blog-row first">
+              <div class="blog-image">
+                <img src="images/blog/blog1.jpg" alt="" class="bl_image" />
+              </div>
+              <div class="blog-content">
+                <div class="content-right">
+                  <h2>The Magic Wheel</h2>
+                  <time>JULY 28, 2014</time> // <span>ADMIN</span> //
+                  <span>FUN, TRAVEL, TRENDS</span>
+                  <a class="link" href="javascript:void(0)">1 RESPONSE</a>
+                  <p class="line"></p>
+                  <div class="post-content">
+                    <p class="text">
+                      It’s not it to understand them in the objects we’re
+                      playing. Products fulfilling a product more innovative,
+                      bullets grunts, powerful or stay at every multivariate
+                      spacetime point of analysis. People have enormous serial
+                      correlation. Good design is derived from so deep and then
+                      there’s no other product useful.<a
+                        href="javascript:void(0)"
+                        >(More..)</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog-row second">
+              <div class="blog-image">
+                <img src="images/blog/blog2.jpg" alt="" class="bl_image" />
+              </div>
+              <div class="blog-content">
+                <div class="content-right">
+                  <h2>The lonely road</h2>
+                  <time>JULY 28, 2014</time> // <span>ADMIN</span> //
+                  <span>FUN, TRAVEL, TRENDS</span>
+                  <a class="link" href="javascript:void(0)">3 RESPONSE</a>
+                  <p class="line"></p>
+                  <div class="post-content">
+                    <p class="text">
+                      If you’ve studied design at all, you’ve probably
+                      encountered Lorem Ipsum placeholder text at some point.
+                      Anywhere there is text, but the meaning of that text isn’t
+                      particularly important, you might see Lorem Ipsum.<a
+                        href="javascript:void(0)"
+                        >(More..)</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="blog-row three">
+              <div class="blog-image">
+                <img src="images/blog/blog3.jpg" alt="" class="bl_image" />
+              </div>
+              <div class="blog-content">
+                <div class="content-right">
+                  <h2>I love gasoline smell</h2>
+                  <time>JULY 28, 2014</time> // <span>ADMIN</span> //
+                  <span>FUN, TRAVEL, TRENDS</span>
+                  <a class="link" href="javascript:void(0)">NO RESPONSE</a>
+                  <p class="line"></p>
+                  <div class="post-content">
+                    <p class="text">
+                      Many of the content, and often about their precious
+                      turfpossessed selves and principles are shortcomings of
+                      seeing and colors to cover up a paucity of design. Zero
+                      out your interface. I think that are deep and profound
+                      indeed, these tasks and showing.<a
+                        href="javascript:void(0)"
+                        >(More..)</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ------------Blog-row------------- -->
+
+          <!-- ------Blog-Link-------- -->
+          <div class="browse">
+            <div class="browse-link blog-link">
+              <a href="javascript:void(0)">SHOW ALL POSTS</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- -----------------------END-MY-BLOG------------------------------- -->
+    </main>
+
+    <!-- -----------------------FOOTER------------------------------- -->
+    <footer id="footer">
+      <!-- -----------------------CONTACT------------------------------- -->
+      <section class="main-contact" id="contact">
+        <div class="container">
+          <div class="text-center">
+            <h2>CONTACT ME</h2>
+            <div class="blog_line">
+              <p class="line"></p>
+              <p class="text">XXX</p>
+              <p class="line"></p>
+            </div>
+            <h3>I'LL BE GLAD TO ANSWER YOUR QUESTIONS!</h3>
+          </div>
+          <!-- ------FORM------ -->
+          <form class="form-contact">
+            <input type="text" placeholder="Name" required />
+            <input type="text" placeholder="Email Address" required />
+            <input type="text" placeholder="Subject" required />
+            <select id="city" name="city">
+              <option value="danang">Đà Nẵng</option>
+              <option value="hanoi">Hà Nội</option>
+              <option value="hochiminh">Hồ Chí Minh</option>
+            </select>
+            <textarea
+              name=""
+              id=""
+              cols="60"
+              rows="7"
+              placeholder="Your Message"
+              required
+            ></textarea>
+            <div class="btn">
+              <button>Send message</button>
+            </div>
+          </form>
+          <!-- ------FORM------ -->
+          <div class="footer-text">
+            <h5>I AM SOCIAL</h5>
+          </div>
+          <nav class="footer-logo">
+            <ul>
+              <li>
+                <a href="javascript:void(0)"
+                  ><img src="images/icon/icon-footer1.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"
+                  ><img src="images/icon/icon-footer2.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"
+                  ><img src="images/icon/icon-footer3.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"
+                  ><img src="images/icon/icon-footer4.png" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="javascript:void(0)"
+                  ><img src="images/icon/icon-footer5.png" alt=""
+                /></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <!-- -----------------------END-CONTACT------------------------------- -->
+    </footer>
+    <!-- -----------------------END-FOOTER------------------------------- -->
+
+    <!-- ----------Script-------------- -->
+    <script type="text/javascript" src="js/portfolio.js"></script>
+    <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/style.js"></script>
+    <!-- ----------Script-------------- -->
+  </body>
+</html>
