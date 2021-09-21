@@ -6,7 +6,7 @@ const showMenu = (toggleId, navId) => {
   if (toggle && nav) {
     toggle.addEventListener("click", () => {
       nav.classList.toggle("show_menu");
-      // toggle.classList.toggle("fa-times");
+      toggle.classList.toggle("fa-times");
     });
   }
 };
