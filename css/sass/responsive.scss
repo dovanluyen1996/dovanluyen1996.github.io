@@ -1,95 +1,57 @@
-@media (max-width: 860px) {
-  #main {
-    .about-grid {
-      grid-template-columns: repeat(2, 1fr) !important;
-    }
-    .portfolio-grid {
-      .grid-main {
-        width: 100%;
-        grid-template-columns: repeat(2, 1fr) !important;
-      }
-    }
-  }
-  #footer {
-    .form-contact {
-      input[type="text"],
-      select,
-      textarea,
-      .btn {
-        width: 100% !important;
-      }
-    }
-  }
-}
+@media (max-width: 768px) {
+	.main__box .column .box {
+	    grid-template-columns: repeat(1, 1fr);
+	    padding: 0;
+	    &__col {
+	    	padding: 20px;
+	    }
+	    &__border {
+	    	border-right: none;
+	    	border-bottom: 1px solid grey;
+		}
+	}
 
-@media (max-width: 650px) {
-  .header-menu .menu {
-    display: flex;
-    justify-content: center;
-    ul {
-      flex-direction: column;
-      justify-content: start !important;
-      align-items: center !important;
-      row-gap: 40px;
-      position: fixed;
-      top: 0;
-      padding: 20px !important;
-      left: -100%;
-      width: 80%;
-      height: 100vh;
-      padding: 2rem 0;
-      background: #5b65f5;
-      transition: 0.5s;
-      li {
-        // display: none;
-      }
-      .show {
-        display: none;
-      }
-    }
-  }
-  .toogle {
-    display: block !important;
-  }
-  .logo_toogle {
-    display: block !important;
-  }
-  .text-center {
-    h2 {
-      font-size: 14vw !important;
-    }
-  }
-  #main {
-    .main-retro {
-      padding-top: 65px !important;
-    }
-    .main-about {
-      .about-grid {
-        grid-template-columns: repeat(1, 1fr) !important;
-      }
-    }
-    .main-portfolio {
-      .portfolio-grid {
-        .grid-main {
-          width: 100%;
-          grid-template-columns: repeat(1, 1fr) !important;
-        }
-      }
-    }
-    .main-blog {
-      .blog-row {
-        flex-direction: column !important;
-        .blog-image {
-          width: 100% !important;
-        }
-        .blog-content {
-          width: 100% !important;
-          .content-right {
-            margin-top: 10px;
-            padding: 0 !important;
-          }
-        }
-      }
-    }
-  }
+	.main__form .form__box {
+		width: 100%;
+	}
+
+	.nav {
+		&__menu{
+			flex-direction: column;
+		    justify-content: space-around !important;
+		    align-items: center;
+		    position: fixed;
+		    z-index: 999;
+		    left: -100%;
+		    top: 0;
+		    width: 30%;
+		    height: 100%;
+		    background: #fff;
+		    transition: 0.5s;
+		    border: 0;
+		}
+		li::before {
+			display: none !important;
+		}
+	}
+
+	.menu-toogle {
+		display: block !important;
+	}
+}
+@media (max-width: 414px) {
+	.menu-toogle .nav-toogle {
+		justify-content: end !important;
+		li::before {
+			display: none !important;
+		}
+	}
+	.hide {
+		display: none !important;
+	}
+	.active {
+		position: relative;
+		right: 0;
+	}
+
 }

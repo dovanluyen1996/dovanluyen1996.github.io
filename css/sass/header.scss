@@ -1,72 +1,78 @@
-@import "valiable.scss";
-
-#header {
-  position: fixed;
-  z-index: 9999;
-  width: 100%;
-  background-color: $color-blue;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  .header-menu {
-    width: 100%;
-    .menu {
-      ul {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        li {
-          a {
-            color: #fff;
-            font-size: 23px;
-          }
-          .scroll:after {
-            display: block;
-            content: "";
-            margin-bottom: 8px;
-            width: 50%;
-            height: 2px;
-            transition: width 0.3s;
-          }
-          .scroll:hover::after {
-            width: 100%;
-            background-color: $color-black;
-          }
-          a:hover {
-            color: $color-black;
-            transition: 1s;
-          }
-        }
-        .logo {
-          transition: 0.3s;
-        }
-        .logo:hover {
-          transform: translateY(20px);
-        }
-      }
+.header {
+	width: 100%;
+	background-image: url("../images/img_header/header_illust_bg.png");
+  	background-size: cover;
+  	margin-bottom: 20px; 	
+    &__container {
+	  	position: relative;
+	  	width: 100%;
+		background-image: url("../images/img_header/header_top_bg.png");
+		background-position: top;
+	    background-repeat: repeat-x;
+		.header__logo {
+		  	display: flex;
+		  	justify-content: center;
+		  	align-items: center;
+		  	padding-top: 30px;
+		  	margin-bottom: 20px;	
+		}
     }
-  }
-  .toogle {
-    display: none;
-    width: 100%;
-    height: 45px;
-    i {
-      font-size: 30px;
-      position: absolute;
-      padding-right: 5px;
-      padding-top: 8px;
-      right: 0;
-    }
-  }
-  .logo_toogle {
-    display: none;
-  }
-}
+    &__bird {
+		position: absolute;
+		z-index: 5;
+		top: 0;
+		padding: 30px;
+		&--size {
+			height: 45px;
+		}
+		&--three {
+			padding-left: 80px;
+		}
+		&--two {
+			padding-left: 50px;
+		}
+	}
+  
+  
+    .nav,.menu-toogle {
+  	  &__menu, .nav-toogle {
+  	  	display: flex;
+  	  	justify-content: space-between;;
+  	  	li {
+  	  		display: flex;
+  	  		align-items: center;
+  	  		a {
+  	  			color: red;
+  	  			text-align: center;
+  	  			font-weight: 600;
+  	  			img {
+  	  				height: 50px;
+  	  			}
+  	  			p {
+  	  				padding-top: 10px;
+  	  			}
 
-#myline {
-  width: 0%;
-  height: 3px;
-  background-color: #fff;
-}
-/*Show menu*/
-.show_menu {
-  left: 0 !important;
+  	  		}
+  	  	}
+  	  	li:before {
+  	  		display: inline-block;
+  	  		content: "";
+  	  		width: 1px;
+  	  		height: 70%;
+  	  		padding-right: 35px;
+  	  		border-left: 1px dotted black;
+  	  	}
+  	  	
+  	  }
+    }
+
+    .menu-toogle {
+    	display: none;
+    	i {
+    		font-size: 40px;
+    		color: blue;
+    	}
+    }
+
+  
 }

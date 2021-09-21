@@ -1,10 +1,29 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	cursor: pointer;
+}
+img {
+	max-width: 100%;
+}
+ul {
+	list-style: none;
+}
+.btn {
+	cursor: pointer;
+}
+/* ----------------------------------------------------- */
 html {
 	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-size: 16px;
 	color: black;
 }
 .container {
-	max-width: 960px;
+	max-width: 1100px;
 	padding-left: 15px;
 	padding-right: 15px;
 	margin: 0 auto;
@@ -18,4 +37,31 @@ input, textarea {
 }
 button {
 	cursor: pointer;
+}
+.logo--size {
+	height: 130px;
+}
+.button {
+	display: inline-block;
+	padding: 10px 70px;
+	border-radius: 20px;
+	color: #fff;
+	font-weight: 700;
+	&__icon {
+		padding-left: 5px;
+	}
+}
+.button:hover {
+	opacity: 0.7;
+	color: black;
+}
+.button--pink {
+	background: rgba(211, 0, 161, 0.88);	
+}
+.button--blue {
+	border: 2px solid blue;
+	color:blue;
+}
+.show_menu {
+  left: 0 !important;
 }
