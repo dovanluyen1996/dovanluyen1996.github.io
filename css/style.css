@@ -425,6 +425,12 @@ button {
     position: relative;
     right: 0;
   }
+  .main__form .form__box .box-column {
+		grid-template-columns: revert;
+		.column {
+			padding: 10px;
+		}
+	}
 }
 
 /*# sourceMappingURL=style.css.map */
