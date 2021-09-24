@@ -80,7 +80,7 @@ background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
 }
 
 .show_menu {
-  left: 0 !important;
+  top: 0 !important;
 }
 
 .header {
@@ -395,8 +395,8 @@ background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
     align-items: center;
     position: fixed;
     z-index: 999;
-    left: -100%;
-    top: 0;
+    top: -100%;
+    left: 0;
     width: 30%;
     height: 100%;
     transition: 0.5s;
