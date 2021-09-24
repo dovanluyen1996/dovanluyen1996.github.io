@@ -399,7 +399,7 @@ background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
     left: 0;
     width: 30%;
     height: 100%;
-    transition: 0.5s;
+    transition: 2s;
     border: 0;
     background: #a8ff78;
     background: -webkit-linear-gradient(to right, #78ffd6, #a8ff78); 
