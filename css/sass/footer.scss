@@ -1,0 +1,32 @@
+.footer {
+	background-image: url("../images/img_content/footer_illust_bg2.png");
+	text-align: center;
+	&__content {
+		position: relative;
+		background-image: url("../images/img_content/footer_u_nami.png");
+		background-position: bottom;
+		background-repeat: repeat-x;
+		text-align: center;
+		.center {
+			position: relative;
+		    display: inline-block;
+			text-align: center;
+			top: -60px;
+			line-height: 30px;
+			.button {
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+		}
+	}
+	.footer__infor{
+		background: rgba(0, 102, 211, 1);
+	}
+	.info {
+		display: inline-block;
+		margin: 0 auto;
+		color: #fff;
+		font-weight: 600;
+		padding: 10px;
+	}
+}

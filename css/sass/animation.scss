@@ -1,0 +1,95 @@
+@keyframes myfirst {
+	0%   { left:0px; top:0px;}
+	25%  { left:0px; top:0px;}
+	50%  { left:100%; top:40px;}
+	75%  { left:80%; bottom:20px;}
+	100% { left:0px; bottom:30px;}
+}
+@keyframes mysecond {
+	0%   { left:0px; top:0px;}
+	25%  { left:0px; top:0px;}
+	50%  { left:100%; top:40px;}
+	75%  { left:90%; bottom:20px;}
+	100% { left:0px; bottom:30px;}
+}
+@keyframes mythree {
+	0%   { left:0px; top:0px;}
+	25%  { left:0px; top:0px;}
+	50%  { left:100%; top:40px;}
+	75%  { left:100%; bottom:20px;}
+	100% { left:0px; bottom:30px;}
+}
+
+.img-boyrun {
+	position: absolute;
+	top: 20%;
+	margin-left: 3%;
+	z-index: 999;
+	width: calc(1080px / 6);
+	height: 180px;
+	background: url("../images/boyrun.png");
+	animation: animate 2s steps(6) infinite;
+}
+@keyframes animate {
+	from 
+	{
+		background-position: 0;
+	}
+	to 
+	{
+		background-position: 1080px;
+	}
+}
+
+
+.img-dragon {
+	position: absolute;
+	right: 0;
+	top: 20%;
+	margin-right: 3%;
+	z-index: 999;
+	width: calc(950px / 4);
+	height: 180px;
+	background: url("../images/dragon.png");
+	animation: dragon 1s steps(2) infinite;
+}
+@keyframes dragon {
+	from 
+	{
+		background-position: 0;
+	}
+	to 
+	{
+		background-position: 950px;
+	}
+}
+
+.img-fire1 {
+	position: absolute;
+	z-index: 999;
+	left: -4%;
+	width: calc(960px / 5);
+	height: 384px;
+	background: url("../images/fire.png");
+	animation: fire 1s steps(5) infinite;
+}
+.img-fire2 {
+	position: absolute;
+	z-index: 999;
+	right: -4%;
+	width: calc(960px / 5);
+	height: 384px;
+	background: url("../images/fire.png");
+	animation: fire 1s steps(5) infinite;
+}
+@keyframes fire {
+	from 
+	{
+		background-position: 0;
+	}
+	to 
+	{
+		background-position: 960px;
+	}
+}
+
